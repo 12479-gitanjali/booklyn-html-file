@@ -40,6 +40,14 @@
               <li><a href = "genre.html">Genre</a></li>
               <li><a href = "profile.html">Profile</a></li>
           </ul>
+          <!-- Search form -->
+          <form class="navbar-form navbar-right" onsubmit="searchFunction(); return false;">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search..." name="search" id="searchInput">
+            </div>
+            <button type="submit" class="btn btn-default">Search</button>
+        </form>
+        <!-- End of search form -->
           <ul class = "nav navbar-nav navbar-right">
               <li><a href = "signUp.html"></spna class = "glyphicon glyphicon-user"></span>&nbsp SignUp</a></li>
               <li><a href = "login.html"></span class = "glyphicon glyphicon-log-in"></span>  &nbspLogin</a></li>
@@ -49,6 +57,7 @@
   </nav>
 
  <!-- navigation part end -->
+
 
    <h1 class="h1">Top picks</h1> 
    
@@ -221,4 +230,17 @@
   <p><a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
   <p>&copy; 2024 Company Name. All rights reserved.</p>
    </footer>
+</html>
+
+<!-- Scripts -->
+<script>
+  function searchFunction() {
+      var query = document.getElementById("searchInput").value;
+      // Perform your search logic here, for example, redirect to a search results page
+      window.location.href = "search_results.html?q=" + encodeURIComponent(query);
+  }
+</script>
+<script src="../library/jquery-3.3.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
 </html>
