@@ -293,4 +293,21 @@ ul.navbar-nav li:hover a
 }
  /*writer ends*/
   
-  
+ .rating {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.fa {
+    font-size: 20px;
+    margin-right: 2px;
+}
+
+.checked {
+    color: orange;
+}
+
+.fa-star {
+    color: #ddd;
+}
